@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        #box{
+            height: 400px;
+            width: 500px;
+            background-color: dodgerblue;
+            margin-left: 20px;
+            text-align: center;
+            border: 2px solid black;
+            color: white;
+        }
+        p{
+            color: red;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        #hide{
+            height: 30px;
+            width: 50px;
+            color: white;
+            background-color: red;
+
+        }
+        #show{
+            height: 30px;
+            width: 50px;
+            color: white;
+            background-color: green;
+
+        }
+        #to{
+            
+            height: 30px;
+            width: 50px;
+            color: white;
+            background-color: rgb(6, 14, 6);
+
+        
+        }
+
+    </style>
+</head>
+<body>
+    <div id= "box">
+        <h1>QuizApp</h1>
+        <h3>1. What is 2 + 2?</h3>
+        <p>4</p>
+        <h3>2. What is 2 - 2?</h3>
+        <p>0</p>
+        <h3>3. Where is GANISH..? </h3>
+        <p>In Hunza</p>
+        <button id ="hide">Hide</button>
+        <button id ="show">Show</button>
+        <button id ="to">Toggle</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+         $("#hide").click(function(){
+             $("p").hide();
+         })
+         $("#show").click(function(){
+             $("p").show();
+         })
+         $("#to").click(function(){
+             $("p").toggle()
+         })
+       
+        })
+    </script>
+</body>
+</html>
